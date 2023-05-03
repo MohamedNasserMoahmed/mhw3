@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+.hidden{
+    display: none;
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5em;
+}
+header .header{
+    font-size: 2.5em;
+    color: #3a6cf4;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+nav a{
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px;
+}
+nav a:hover{
+    color: #000;
+    background-color: rgb(130, 129, 136);
+    border-radius: 7px;
+}
+.main{
+    padding: 100px 160px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    background: url(https://media.gcflearnfree.org/content/5e31ca08bc7eff08e4063776_01_29_2020/ProgrammingIllustration.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.main h2 {
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.main h4 {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.main a {
+    color: #000;
+    font-size: 1.7em;
+    padding-right: 20px;
+}
+.main a:hover{
+    color: rgb(206, 206, 206);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+h3{
+    padding-bottom: 10px;
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    background-color: beige;
+    font-size: 2em;
+    margin: 30px 0;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+} 
+
+.info-pers{
+    display: flex;
+    justify-content: center;
+}
+.info-pers div{
+    color: #eee;
+    background-color: rgb(12, 12, 12);
+    margin-bottom: 0;
+    font-size: 15px;
+    padding: 30px 50px;
+}
+
+/* @media (max-width:950px){
+    nav{
+        display: none;
+    }
+    .hidden{
+        margin: 20px;
+        display: flex;
+        width: 35px;
+        height: 19px;
+        cursor: pointer;
+        position: relative;
+    }
+    .hidden span {
+        background-color: black;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        transition: all 0.35 ease;
+        z-index: 12;
+    }
+    .hidden span:first-child {
+        top: 0;
+    }
+    .hidden span:nth-child(2) {
+        top: 8px;
+    }
+    .hidden span:last-child {
+        top: 16px;
+    }
+
+    .hidden:hover span:nth-child(2) {
+        opacity: 0;
+    }
+    .hidden:hover span:first-child,
+    .hidden:hover span:last-child {
+        top: 6px;
+        background-color: rgb(182, 11, 11);
+    }
+    .hidden:hover span:first-child {
+    transform: rotate(45deg);
+    transition: 0.5s ease;
+    }
+    .hidden:hover span:last-child {
+    transform: rotate(-45deg);
+    transition: 0.5s ease;
+} */
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+    
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
+
+.search{
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+}
+.search h2{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.search h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.search #youtube{
+    width: 25em;
+    height: 2em;
+    border: solid 1px rgb(211, 211, 211);
+    font-size: 15px;
+}
+.search #submit{
+    width: 6em;
+    height: 2em;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #3a6cf4;
+    border: dashed 1px ;
+    color: #eee;
+    cursor: pointer;
+}
+
+.search #kitsu{
+    width: 25em;
+    height: 2em;
+    border: solid 1px rgb(211, 211, 211);
+    font-size: 15px;
+}
+.search #send{
+    width: 6em;
+    height: 2em;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #3a6cf4;
+    border: dashed 1px ;
+    color: #eee;
+    cursor: pointer;
+}
+
+#first{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+.link{
+    width: auto;
+    text-decoration: none;
+    color: rgb(29, 27, 27);
+    margin: 10px 20px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #3a6cf4;
+    border-radius: 5px;
+}
